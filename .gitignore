@@ -117,3 +117,6 @@ typings
 
 #Sass
 .sass-cache/
+
+# Build
+dist/
