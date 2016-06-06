@@ -43,13 +43,29 @@ You must then ensure that the following packages are installed **globally**:
  npm install -g bower karma-cli gulp firebase-tools
  ```
 
+### Build Setup
 
-Don't forget to `npm install`!
+``` bash
+# install dependencies
+npm install
 
-### Running
+# serve with hot reload at localhost:8080
+npm run dev
 
-Run `npm start`, and navigate to [localhost:3000](localhost:3000)
+# build for production with minification
+npm run build
 
+# run unit tests
+npm run unit
+
+# run e2e tests
+npm run e2e
+
+# run all tests
+npm test
+```
+
+For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
 ## License
 [MIT License](license.md)
