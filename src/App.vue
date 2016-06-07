@@ -1,13 +1,11 @@
 <template>
   <div class="" id="app">
-    <!--<div class="row">-->
-    <lyrics :slides="slides"></lyrics>
+    <lyrics :slides="slides" class="pane"></lyrics>
 
-    <div class="middle-pane">
-      <special-slides></special-slides>
+    <div class="middle-pane pane">
+      <special-slides class="pane"></special-slides>
     </div>
-    <settings-pane></settings-pane>
-    <!--</div>-->
+    <settings-pane class="pane"></settings-pane>
   </div>
 </template>
 
@@ -47,7 +45,7 @@
 
 </script>
 
-<style lang="less">
+<style>
 
   /*@import "../vendor/semantic/src/semantic.less";*/
 
@@ -67,6 +65,9 @@
     justify-content: center;
     height: 100%;
     width: 100%;
+  }
+  .pane {
+    padding: 1rem;
   }
   .middle-pane {
     display: flex;
