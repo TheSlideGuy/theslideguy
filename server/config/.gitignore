@@ -1,0 +1,8 @@
+# ignore everything - might have personal configs
+*
+
+# whitelist
+!index.js
+!config.defaults.js
+!config.example.js
+!.gitignore
