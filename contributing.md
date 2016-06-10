@@ -21,9 +21,17 @@ There aren't really any hard rules on contributing documentation.
 
 Please ensure your pull request has sufficient tests and documentation.
 
+Also, make sure you adhere to our JS style. 
+
 ### Code Style
 
-We use [JSCS](http://jscs.info) to enforce code style. 
+We use [ESLint](esling.org). Run the lint with this command:
+
+```
+npm run lint --silent
+```
+
+Note that the silent flag removes the annoying NPM error that is thrown when the linter returns with an error. 
 
 We may start using EditorConfig later on too.
 
