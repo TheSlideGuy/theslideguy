@@ -2,7 +2,16 @@ import Vue from 'vue';
 import App from './App';
 
 
-new Vue({
+window.vm = new Vue({
   el: 'body',
   components: { App },
+  data: {
+    title: ''
+  },
+  watch: {
+    title (val) {
+      document.title = val;
+    }
+  }
 });
+
